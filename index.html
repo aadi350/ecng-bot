@@ -9,6 +9,7 @@
 <html>
 
 <head>
+  <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1">
@@ -18,17 +19,15 @@
 </head>
 
 <body style="overflow: hidden;">
-  <img style="margin:auto; overflow: hidden; padding:0; min-width:100vw;" src='./static/img/backdrop.jpg' />
-  <div style="background-image:url(https://github.com/aadi350/ecng-bot/blob/main/static/img/backdrop.jpg);">
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
       intent="WELCOME"
       chat-title="ECNG-FAQBot"
       agent-id="ae7ae81b-9055-4fd4-b5e0-a32c9205581f"
       language-code="en"
     ></df-messenger>
-  </div>
-      
+  <iframe   is="x-frame-bypass" src="https://sta.uwi.edu/eng/electrical/"  scrolling="yes" style="padding: 0;  width: 100vw; height: 100vh;" />
+  
 </body>
 
 </html>
